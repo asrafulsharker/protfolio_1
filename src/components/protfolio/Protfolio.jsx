@@ -1,0 +1,9 @@
+import "./protfolio.scss"
+
+export default function Protfolio() {
+    return (
+        <div className="protfolio">
+            
+        </div>
+    )
+}
