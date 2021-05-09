@@ -1,4 +1,4 @@
-export const featuredPortfolio = [
+export const featuredProtfolio = [
     {
       id: 1,
       title: "Social Media App",
@@ -37,7 +37,7 @@ export const featuredPortfolio = [
     },
   ];
   
-  export const webPortfolio = [
+  export const webProtfolio = [
     {
       id: 1,
       title: "Web Social Media App",
@@ -70,7 +70,7 @@ export const featuredPortfolio = [
     },
   ];
   
-  export const mobilePortfolio = [
+  export const mobileProtfolio = [
     {
       id: 1,
       title: "Mobile Social Media App",
@@ -109,7 +109,7 @@ export const featuredPortfolio = [
     },
   ];
   
-  export const designPortfolio = [
+  export const designProtfolio = [
     {
       id: 1,
       title: "Design Social Media App",
@@ -148,7 +148,7 @@ export const featuredPortfolio = [
     },
   ];
   
-  export const contentPortfolio = [
+  export const contentProtfolio = [
     {
       id: 1,
       title: "Content Social Media App",

@@ -1,9 +1,9 @@
 import "./protfolio.scss";
 import ProtfolioList from "../protfolioList/ProtfolioList";
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import {
     featuredProtfolio,
-    webPortfolio,
+    webProtfolio,
     mobileProtfolio,
     designProtfolio,
     contentProtfolio
@@ -40,8 +40,23 @@ export default function Protfolio() {
 
     useEffect(()=>{
         switch(selected){
-            case "featured"
-            setData(featuredProtfolio)
+            case "featured":
+                setData(featuredProtfolio);
+            break;
+            case "web":
+                setData(webProtfolio);
+            break;
+            case "mobile":
+                setData(mobileProtfolio);
+            break;
+            case "design":
+                setData(designProtfolio);
+            break;
+            case "content":
+                setData(contentProtfolio);
+            break;
+            default:
+                setData(featuredProtfolio);
         }
 
     },[selected])
@@ -60,22 +75,13 @@ export default function Protfolio() {
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src="https://cdn57.androidauthority.net/wp-content/uploads/2018/06/monzo-bank.jpg" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://stormotion.io/blog/content/images/2020/09/mobile-banking-app.jpg" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://stormotion.io/blog/content/images/2020/09/mobile-banking-app.jpg" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://stormotion.io/blog/content/images/2020/09/mobile-banking-app.jpg" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
+                {data.map((d)=>(
+                    <div className="item">
+                    <img src={d.img} alt=""/>
+                    <h3>{d.title}</h3>
+                    </div>
+                ))}
+
             </div>
         </div>
     )

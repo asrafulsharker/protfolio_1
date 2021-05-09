@@ -1,3 +1,41 @@
 .works{
-    background-color: lightgreen;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .slider{
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .left{
+                    flex: 4;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .right{
+                    flex: 8;
+                    height: 80%;
+                }
+            }
+        }
+    }
+
+
 }
