@@ -1,13 +1,18 @@
 @import "../../global.scss";
 
-li{
-    font-size: 14px;
-    margin-right: 50px;
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
-    &.active{
-        background-color: $mainColor;
-        color: white;
-    }
+.protfolioList {
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @include mobile{
+    margin-right: 20px;
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+  }
 }
