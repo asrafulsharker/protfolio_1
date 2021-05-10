@@ -1,3 +1,4 @@
+import "./testimonials.scss";
 export default function Testimonials() {
     const data = [
       {
@@ -31,6 +32,7 @@ export default function Testimonials() {
         desc:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
       },
+      
     ];
     return (
       <div className="testimonials" id="testimonials">
